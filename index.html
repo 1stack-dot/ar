@@ -4,30 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>​
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
 </head>
 <body>
     <a-scene>
-        <a-sky color="steelblue"></a-sky>
-        <a-plane
-            rotation="-90 0 0"
-            width="10"
-            height="10"
-            color="#3B1F0B"
-        ></a-plane>
-        <a-octahedron
-            position="0 2 -3"
-            radius="0.7"
-            scale="1 2 1"
-            color="blue"
-            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur:10000;"
-        ></a-octahedron>
-        <a-cylinder
-            position="0 0.15 -3"
+        <a-assets>
+            <img id="taiyou" src="../asets/taiyou.jpg" alt="">
+            <img id="suisei" src="../asets/suisei.jpg" alt="">
+            <img id="kinsei" src="../asets/kinsei.jpg" alt="">
+            <img id="tikyuu" src="../asets/tikyuu.jpg" alt="">
+            <img id="kasei" src="../asets/kasei.jpg" alt="">
+            <img id="mokusei"src="../asets/mokusei.jpg" alt="">
+            <img id="dosei" src="../asets/dosei.jpg" alt="">
+            <img id="tennnousei" src="../asets/tennousei.jpg" alt="">
+            <img id="kaiousei" src="../asets/kaiousei.jpg" alt="">
+            <img id="uchuu" src="../asets/uchuu.jpg" alt="">
+        </a-assets>
+        <a-camera position="0 12 20" rotation="-60 0 0"></a-camera>
+        <a-sky material="src:#uchuu"></a-sky>
+        <a-sphere
+            position="0 2 -5"
             radius="1"
-            height="0.3"
-            color="dimgray"
-        ></a-cylinder>
+            material="src:#taiyou"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 10000"
+        ></a-sphere>
+        <a-torus position="0 2 -5" rotation="90 0 0" radius="2" radius-tubular="0.005" color="white"></a-torus>
+        <a-torus position="0 2 -5" rotation="90 0 0" radius="3" radius-tubular="0.005" color="white"></a-torus>
+        <a-torus position="0 2 -5" rotation="90 0 0" radius="4" radius-tubular="0.005" color="white"></a-torus>
+        <a-torus position="0 2 -5" rotation="90 0 0" radius="5" radius-tubular="0.005" color="white"></a-torus>
+        <a-torus position="0 2 -5" rotation="90 0 0" radius="6.5" radius-tubular="0.005" color="white"></a-torus>
+        <a-torus position="0 2 -5" rotation="90 0 0" radius="8" radius-tubular="0.005" color="white"></a-torus>
+        <a-torus position="0 2 -5" rotation="90 0 0" radius="9.5" radius-tubular="0.005" color="white"></a-torus>
+        <a-torus position="0 2 -5" rotation="90 0 0" radius="11" radius-tubular="0.005" color="white"></a-torus>
+        <a-entity
+            position="0 2 -5"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 10000">
+            <a-sphere
+                position="2 0 0"
+                radius="0.2"
+                material="src:#suisei"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 3000"
+            ></a-sphere>
+        </a-entity>
+        <a-entity
+            position="0 2 -5"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 15000">
+            <a-sphere
+                position="3 0 0"
+                radius="0.3"
+                material="src:#kinsei"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 4000"
+            ></a-sphere>
+        </a-entity>
+        <a-entity
+            position="0 2 -5"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 20000">
+            <a-sphere
+                position="4 0 0"
+                radius="0.35"
+                material="src:#tikyuu"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 5000"
+            ></a-sphere>
+        </a-entity>
+        <a-entity
+            position="0 2 -5"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 25000">
+            <a-sphere
+                position="5 0 0"
+                radius="0.25"
+                material="src:#kasei"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 4500"
+            ></a-sphere>
+        </a-entity>
+        <a-entity
+            position="0 2 -5"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 35000">
+            <a-sphere
+                position="6.5 0 0"
+                radius="0.7"
+                material="src:#mokusei"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 6000"
+            ></a-sphere>
+        </a-entity>
+        <a-entity
+            position="0 2 -5"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 45000">
+            <a-sphere
+                position="8 0 0"
+                radius="0.6"
+                material="src:#dosei"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 7000"
+            ></a-sphere>
+            
+        </a-entity>
+        <a-entity
+            position="0 2 -5"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 55000">
+            <a-sphere
+                position="9.5 0 0"
+                radius="0.45"
+                material="src:#tennnousei"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 8000"
+            ></a-sphere>
+        </a-entity>
+        <a-entity
+            position="0 2 -5"
+            animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 65000">
+            <a-sphere
+                position="11 0 0"
+                radius="0.4"
+                material="src:#kaiousei"
+                animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 9000"
+            ></a-sphere>
+        </a-entity>
     </a-scene>
 </body>
 </html>
